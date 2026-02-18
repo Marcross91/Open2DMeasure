@@ -1,6 +1,10 @@
 Open2DMeasure
 Open2DMeasure is a lightweight Windows-based desktop application dedicated to 2D dimensional metrology. The software enables users to analyze technical images, perform precise geometric measurements, and manage industrial tolerances through a simple and intuitive interface.
 
+## License
+This project is licensed under the terms of the **GNU General Public License v3.0 (GPL-3.0)**. 
+See the [LICENSE](LICENSE) file for the full text.
+
 Designed for metrologists, quality control inspectors, and engineers who need an open-source tool for rapid component verification.
 
 🚀 Key Features
