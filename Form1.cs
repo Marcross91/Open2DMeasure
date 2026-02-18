@@ -56,6 +56,7 @@ namespace Open2DMeasure {
         //Trasformazioni del pan grafico
         private float traslaGRX = 0;
         private float traslaGRY = 0;
+        private double angolo = 0;
 
 
 
@@ -80,7 +81,7 @@ namespace Open2DMeasure {
                     for (int i = 0; i < tmp.Count; i++) {
                         entitaGeometriche.Add(tmp[i]);
                     }
-                    panGrafico.Invalidate();
+                    AggiornaLimiti();
                 } else {
                     MessageBox.Show("L'elemento selezionato non è corretto", "ATTENZIONE!");
                 }
@@ -100,7 +101,7 @@ namespace Open2DMeasure {
             }
             entitaGeometriche.Clear();
             pbImmagine.Image = null;
-            panGrafico.Invalidate();
+            AggiornaLimiti();
             cbModalitaScala.SelectedIndex = -1;
             cbCostruzione.SelectedIndex = -1;
             cbMisura.SelectedIndex = -1;
@@ -120,6 +121,7 @@ namespace Open2DMeasure {
             pbImmagine.Height = 50;
             traslaGRX = 0;
             traslaGRY = 0;
+            angolo = 0;
             tabcGrafico.SelectedTab = tabPage_Immagine;
             panGrafico.AutoScrollPosition = new Point(0, 0);
             allineamento = new Allineamento();
@@ -723,7 +725,7 @@ namespace Open2DMeasure {
 
             lbElementi.SelectedItems.Clear();
             //Ridisegna grafico
-            panGrafico.Invalidate();
+            AggiornaLimiti();
         }
 
         private void cmdMisura_Click(object sender, EventArgs e) {
@@ -1057,17 +1059,28 @@ namespace Open2DMeasure {
             }
         }
 
-        private void panGrafico_Paint(object sender, PaintEventArgs e) {
-
+        private void AggiornaLimiti() {
             Punto minGR = TrovaMinGR(entitaGeometriche);
             Punto maxGR = TrovaMaxGR(entitaGeometriche);
+            if (minGR != null && maxGR != null) {
+                int w = Convert.ToInt32((maxGR.X - minGR.X) * fattoreScala * fattoreZoomGr) + 100;
+                int h = Convert.ToInt32((maxGR.Y - minGR.Y) * fattoreScala * fattoreZoomGr) + 100;
+                panGrafico.AutoScrollMinSize = new Size(w, h);
+            }
+            panGrafico.Invalidate();
+        }
+
+        private void panGrafico_Paint(object sender, PaintEventArgs e) {
+
+            
 
             // L'oggetto 'g' contiene gli strumenti di disegno (GDI+)
             Graphics g = e.Graphics;
-            //g.TranslateTransform(panGrafico.AutoScrollPosition.X, panGrafico.AutoScrollPosition.Y);
+            g.TranslateTransform(panGrafico.AutoScrollPosition.X, panGrafico.AutoScrollPosition.Y);
 
+            Punto minGR = TrovaMinGR(entitaGeometriche);
+            Punto maxGR = TrovaMaxGR(entitaGeometriche);
             if (minGR != null && maxGR != null) {
-                panGrafico.AutoScrollMinSize = new Size(Convert.ToInt32(((maxGR.X - minGR.X) * fattoreScala) * fattoreZoomGr + 80), Convert.ToInt32(((maxGR.Y - minGR.Y) * fattoreScala) * fattoreZoomGr + 80));
                 if (Math.Abs(minGR.X) > allineamento.o.X) {
                     traslaGRX = (float)((-minGR.X) * fattoreScala * fattoreZoomGr);
                     g.TranslateTransform(traslaGRX, 0);
@@ -1178,7 +1191,7 @@ namespace Open2DMeasure {
                 ultimo.DecrementaQuantita(entitaGeometriche[entitaGeometriche.Count - 1]);
                 entitaGeometriche.RemoveAt(entitaGeometriche.Count - 1);
                 lbElementi.SelectedItems.Clear();
-                panGrafico.Invalidate();
+                AggiornaLimiti();
             }
         }
 
@@ -1252,7 +1265,7 @@ namespace Open2DMeasure {
                     lbElementi.SelectedItems.Clear();
 
                     //Ridisegna grafico
-                    panGrafico.Invalidate();
+                    AggiornaLimiti();
                 } else if (immagineCaricata != null) {
                     PointF p = TrovaPuntoBordo(bmp, pA_UI, pB_UI);
                     CalcolaScala(new Punto(p.X, p.Y, false, Color.Black));
@@ -1263,19 +1276,19 @@ namespace Open2DMeasure {
         private void btnZoomPiuGr_Click(object sender, EventArgs e) {
             // Aumenta il fattore di zoom
             fattoreZoomGr += (zoomStep);
-            panGrafico.Invalidate();
+            AggiornaLimiti();
         }
 
         private void btnZoomMenoGr_Click(object sender, EventArgs e) {
             // Aumenta il fattore di zoom
             fattoreZoomGr -= (zoomStep);
-            panGrafico.Invalidate();
+            AggiornaLimiti();
         }
 
         private void btnResetZoomGr_Click(object sender, EventArgs e) {
             // Aumenta il fattore di zoom
             fattoreZoomGr = 1;
-            panGrafico.Invalidate();
+            AggiornaLimiti();
         }
 
         private void tscmdSalva_Click(object sender, EventArgs e) {
@@ -1463,7 +1476,7 @@ namespace Open2DMeasure {
                         costruzioneAttiva = true;
 
                         // 4. Aggiorna l'interfaccia
-                        panGrafico.Invalidate();
+                        AggiornaLimiti();
                         MessageBox.Show("Progetto caricato correttamente!", "Apertura", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     } catch (Exception ex) {
@@ -1596,6 +1609,96 @@ namespace Open2DMeasure {
             }
         }
 
+        private void cmdDefinisciAsseX_Click(object sender, EventArgs e) {
+            if (lbElementi.SelectedIndices.Count == 1) {
+                Linea l0 = null;
+                object elemento = entitaGeometriche[lbElementi.SelectedIndex];
+                if (elemento is Linea) {
+                    l0 = (Linea)elemento;
+                    Linea l1 = new Linea(new Punto(0,0,false, Color.Black), new Punto(1,0, false, Color.Black), false, Color.Black);
+                    Misura ang = new Misura(l0, l1, false, Misura.Tipologia.Angolo, Color.Black);
+                    List<Entita> tmp = new List<Entita>();
+                    double x1 = l0.P1.X;
+                    double y1 = l0.P1.Y;
+                    double x2 = l0.P2.X;
+                    double y2 = l0.P2.Y;
+                    for (int i = 0; i < entitaGeometriche.Count; i++) {
+                        if (!(entitaGeometriche[i] is Allineamento)) {
+                            if ((y2 > y1 && x2 > x1) || (y2 < y1 && x2 < x1)) {
+                                entitaGeometriche[i].Ruota(new Punto(0, 0, false, Color.Black), -ang.ValoreAngolo);
+                                if (i == 1) {
+                                    angolo -= ang.ValoreAngolo;
+                                }
+                            } else {
+                                entitaGeometriche[i].Ruota(new Punto(0, 0, false, Color.Black), ang.ValoreAngolo);
+                                if (i == 1) {
+                                    angolo += ang.ValoreAngolo;
+                                }
+                            }
+                            tmp.Add(entitaGeometriche[i]);
+                        }
+                    }
+                    entitaGeometriche.Clear();
+                    entitaGeometriche.Add(allineamento);
+                    for (int i = 0; i < tmp.Count; i++) {
+                        entitaGeometriche.Add(tmp[i]);
+                    }
+                    AggiornaLimiti();
+                } else {
+                    MessageBox.Show("L'elemento selezionato non è corretto", "ATTENZIONE!");
+                }
+
+                lbElementi.SelectedIndex = -1;
+            }
+        }
+
+        private void cmdDefinisciAsseY_Click(object sender, EventArgs e) {
+            if (lbElementi.SelectedIndices.Count == 1) {
+                Linea l0 = null;
+                object elemento = entitaGeometriche[lbElementi.SelectedIndex];
+                if (elemento is Linea) {
+                    l0 = (Linea)elemento;
+                    Linea l1 = new Linea(new Punto(0, 0, false, Color.Black), new Punto(0, 1, false, Color.Black), false, Color.Black);
+                    Misura ang = new Misura(l0, l1, false, Misura.Tipologia.Angolo, Color.Black);
+                    List<Entita> tmp = new List<Entita>();
+                    double x1 = l0.P1.X;
+                    double y1 = l0.P1.Y;
+                    double x2 = l0.P2.X;
+                    double y2 = l0.P2.Y;
+                    for (int i = 0; i < entitaGeometriche.Count; i++) {
+                        if (!(entitaGeometriche[i] is Allineamento)) {
+                            if ((y2 > y1 && x2 > x1) || (y2 < y1 && x2 < x1)) {
+                                entitaGeometriche[i].Ruota(new Punto(0, 0, false, Color.Black), ang.ValoreAngolo);
+                                if (i == 1) {
+                                    angolo += ang.ValoreAngolo;
+                                }
+                            } else {
+                                entitaGeometriche[i].Ruota(new Punto(0, 0, false, Color.Black), -ang.ValoreAngolo);
+                                if (i == 1) {
+                                    angolo -= ang.ValoreAngolo;
+                                }
+                            }
+                            tmp.Add(entitaGeometriche[i]);
+                        }
+                    }
+                    entitaGeometriche.Clear();
+                    entitaGeometriche.Add(allineamento);
+                    for (int i = 0; i < tmp.Count; i++) {
+                        entitaGeometriche.Add(tmp[i]);
+                    }
+                    AggiornaLimiti();
+                } else {
+                    MessageBox.Show("L'elemento selezionato non è corretto", "ATTENZIONE!");
+                }
+
+                lbElementi.SelectedIndex = -1;
+            }
+        }
+
+        private void tableLayoutPanel1_MouseMove(object sender, MouseEventArgs e) {
+
+        }
+
         private void pbImmagine_MouseDown(object sender, MouseEventArgs e) {
             if (immagineCaricata == null) return;
             if (chbRilevaPunto.Checked) {
@@ -1606,11 +1709,13 @@ namespace Open2DMeasure {
                 pbImmagine.Invalidate();       // Forza il ridisegno
             } else {
                 if ((immagineCaricata != null) && (costruzioneAttiva == true)) {
-                    entitaGeometriche.Add(new Punto((e.X / (double)fattoreScala) / (double)fattoreZoomImg - allineamento.o.X, (e.Y / (double)fattoreScala) / (double)fattoreZoomImg - allineamento.o.Y, true, Color.Black));
+                    Punto pClick = new Punto((e.X / (double)fattoreScala) / (double)fattoreZoomImg - allineamento.o.X, (e.Y / (double)fattoreScala) / (double)fattoreZoomImg - allineamento.o.Y, true, Color.Black);
+                    pClick.Ruota(new Punto(0, 0, false, Color.Black), angolo);
+                    entitaGeometriche.Add(pClick);
                     lbElementi.SelectedItems.Clear();
 
                     //Ridisegna grafico
-                    panGrafico.Invalidate();
+                    AggiornaLimiti();
                 } else if (immagineCaricata != null) {
                     CalcolaScala(new Punto(e.X, e.Y, false,Color.Black));
                 }

@@ -51,6 +51,7 @@ namespace Open2DMeasure {
             this.tscmdCancellaTutto = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tscmdGeneraReport = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.tscmdInfo = new System.Windows.Forms.ToolStripButton();
             this.cmdCostruisci = new System.Windows.Forms.Button();
             this.gbCosruzione = new System.Windows.Forms.GroupBox();
@@ -81,7 +82,6 @@ namespace Open2DMeasure {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.gbAllineamento.SuspendLayout();
             this.cmslbElementi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImmagine)).BeginInit();
@@ -148,6 +148,7 @@ namespace Open2DMeasure {
             this.cmdDefinisciAsseX.TabIndex = 3;
             this.cmdDefinisciAsseX.Text = "Definisci asse X";
             this.cmdDefinisciAsseX.UseVisualStyleBackColor = true;
+            this.cmdDefinisciAsseX.Click += new System.EventHandler(this.cmdDefinisciAsseX_Click);
             // 
             // cmdDefinisciAsseY
             // 
@@ -158,6 +159,7 @@ namespace Open2DMeasure {
             this.cmdDefinisciAsseY.TabIndex = 4;
             this.cmdDefinisciAsseY.Text = "Definisci asse Y";
             this.cmdDefinisciAsseY.UseVisualStyleBackColor = true;
+            this.cmdDefinisciAsseY.Click += new System.EventHandler(this.cmdDefinisciAsseY_Click);
             // 
             // gbAllineamento
             // 
@@ -347,6 +349,11 @@ namespace Open2DMeasure {
             this.tscmdGeneraReport.Size = new System.Drawing.Size(29, 24);
             this.tscmdGeneraReport.Text = "Genera report";
             this.tscmdGeneraReport.Click += new System.EventHandler(this.tscmdGeneraReport_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
             // 
             // tscmdInfo
             // 
@@ -728,6 +735,7 @@ namespace Open2DMeasure {
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1900, 907);
             this.tableLayoutPanel1.TabIndex = 20;
+            this.tableLayoutPanel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.tableLayoutPanel1_MouseMove);
             // 
             // flowLayoutPanel1
             // 
@@ -750,11 +758,6 @@ namespace Open2DMeasure {
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(344, 94);
             this.panel1.TabIndex = 15;
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
             // 
             // frmMain
             // 
