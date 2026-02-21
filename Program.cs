@@ -1,4 +1,21 @@
-﻿using System;
+/*
+ * Open2DMeasure - Software per misurazione ottica 2D
+ * Copyright (C) 2026  Porporato Marco
+ * * Questo programma è software libero: puoi ridistribuirlo e/o modificarlo
+ * sotto i termini della Licenza Pubblica Generica GNU così come pubblicata
+ * dalla Free Software Foundation, sia la versione 3 della licenza, o
+ * (a tua scelta) qualsiasi versione successiva.
+ *
+ * Questo programma è distribuito nella speranza che sia utile,
+ * ma SENZA ALCUNA GARANZIA; senza neppure la garanzia implicita di
+ * COMMERCIABILITÀ o IDONEITÀ PER UN PARTICOLARE SCOPO. 
+ * Consulta la Licenza Pubblica Generica GNU per maggiori dettagli.
+ *
+ * Dovresti aver ricevuto una copia della Licenza Pubblica Generica GNU
+ * insieme a questo programma. In caso contrario, vedi <https://www.gnu.org/licenses/>.
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
