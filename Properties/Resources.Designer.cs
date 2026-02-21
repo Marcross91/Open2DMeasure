@@ -22,7 +22,7 @@ namespace Open2DMeasure.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Open2DMeasure.Properties {
         ///   Restituisce l'istanza di ResourceManager nella cache utilizzata da questa classe.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Open2DMeasure.Properties.Resources", typeof(Resources).Assembly);
@@ -51,12 +51,399 @@ namespace Open2DMeasure.Properties {
         ///   ricerche di risorse eseguite utilizzando questa classe di risorse fortemente tipizzata.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Confermare per cancellare tutto.
+        /// </summary>
+        public static string CancellareTutto {
+            get {
+                return ResourceManager.GetString("CancellareTutto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Punto nominale, Punto da linea, Punto di intersezione, Punto offset, Linea per due punti, Linea ruotata per un punto, Cerchio da centro e raggio, Cerchio per tre punti, Centro del cerchio.
+        /// </summary>
+        public static string cbCostruzione {
+            get {
+                return ResourceManager.GetString("cbCostruzione", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Distanza, Distanza X, Distanza Y, Diametro, Raggio, Angolo.
+        /// </summary>
+        public static string cbMisura {
+            get {
+                return ResourceManager.GetString("cbMisura", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Distanza nota, DistanzaX nota, DistanzaY nota, Automatica.
+        /// </summary>
+        public static string cbModalitaScala {
+            get {
+                return ResourceManager.GetString("cbModalitaScala", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Costruisci.
+        /// </summary>
+        public static string cmdCostruisci {
+            get {
+                return ResourceManager.GetString("cmdCostruisci", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Definisci asse X.
+        /// </summary>
+        public static string cmdDefinisciAsseX {
+            get {
+                return ResourceManager.GetString("cmdDefinisciAsseX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Definisci origine.
+        /// </summary>
+        public static string cmdDefinisciOrigine {
+            get {
+                return ResourceManager.GetString("cmdDefinisciOrigine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Definisci asse Y.
+        /// </summary>
+        public static string cmdDfinisciAsseY {
+            get {
+                return ResourceManager.GetString("cmdDfinisciAsseY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Misura.
+        /// </summary>
+        public static string cmdMisura {
+            get {
+                return ResourceManager.GetString("cmdMisura", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a La modalità costruzione non è attiva!.
+        /// </summary>
+        public static string CostruzioneOff {
+            get {
+                return ResourceManager.GetString("CostruzioneOff", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a L&apos;elemento non è stato creato!.
+        /// </summary>
+        public static string ElementoNonCreato {
+            get {
+                return ResourceManager.GetString("ElementoNonCreato", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Modalità di calibrazione non selezionata!.
+        /// </summary>
+        public static string ErrModScala {
+            get {
+                return ResourceManager.GetString("ErrModScala", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a L&apos;elemento selezionato non è corretto!.
+        /// </summary>
+        public static string ErroreSelezione {
+            get {
+                return ResourceManager.GetString("ErroreSelezione", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a File non trovato nella cartella!.
+        /// </summary>
+        public static string FileNonTrovato {
+            get {
+                return ResourceManager.GetString("FileNonTrovato", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Allineamento.
+        /// </summary>
+        public static string gbAllineamento {
+            get {
+                return ResourceManager.GetString("gbAllineamento", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Costruzione.
+        /// </summary>
+        public static string gbCostruzione {
+            get {
+                return ResourceManager.GetString("gbCostruzione", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Misura.
+        /// </summary>
+        public static string gbMisura {
+            get {
+                return ResourceManager.GetString("gbMisura", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Inserire valore angolo.
+        /// </summary>
+        public static string InserireAngolo {
+            get {
+                return ResourceManager.GetString("InserireAngolo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Inserire valore X.
+        /// </summary>
+        public static string InserireCoordX {
+            get {
+                return ResourceManager.GetString("InserireCoordX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Inserire valore Y.
+        /// </summary>
+        public static string InserireCoordY {
+            get {
+                return ResourceManager.GetString("InserireCoordY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Inserire valore nominale.
+        /// </summary>
+        public static string InserireNominale {
+            get {
+                return ResourceManager.GetString("InserireNominale", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Inserire valore percentuale (0-100).
+        /// </summary>
+        public static string InserirePerc {
+            get {
+                return ResourceManager.GetString("InserirePerc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Inserire valore raggio.
+        /// </summary>
+        public static string InserireRaggio {
+            get {
+                return ResourceManager.GetString("InserireRaggio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Inserire valore tolleranza inferiore.
+        /// </summary>
+        public static string InserireTolMeno {
+            get {
+                return ResourceManager.GetString("InserireTolMeno", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Inserire valore tolleranza superiore.
+        /// </summary>
+        public static string InserireTolPiu {
+            get {
+                return ResourceManager.GetString("InserireTolPiu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Diametro visualizzato (pixel).
+        /// </summary>
+        public static string lblDiametroVisualizzato {
+            get {
+                return ResourceManager.GetString("lblDiametroVisualizzato", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Metodo di calibrazione.
+        /// </summary>
+        public static string lblModalitaScala {
+            get {
+                return ResourceManager.GetString("lblModalitaScala", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Open2DMeasure - software di misura 2D.
+        /// </summary>
+        public static string MainTitle {
+            get {
+                return ResourceManager.GetString("MainTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Non c&apos;è intersezione tra gli elementi selezionati.
+        /// </summary>
+        public static string NoIntersezione {
+            get {
+                return ResourceManager.GetString("NoIntersezione", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a L&apos;operazione ha generato un errore!.
+        /// </summary>
+        public static string OperazioneKo {
+            get {
+                return ResourceManager.GetString("OperazioneKo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a L&apos;operazione è andata a buon fine!.
+        /// </summary>
+        public static string OperazioneOk {
+            get {
+                return ResourceManager.GetString("OperazioneOk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Scala.
+        /// </summary>
+        public static string sslblScala {
+            get {
+                return ResourceManager.GetString("sslblScala", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Costruzioni.
+        /// </summary>
+        public static string tabPage_Costruzioni {
+            get {
+                return ResourceManager.GetString("tabPage_Costruzioni", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Immagine.
+        /// </summary>
+        public static string tabPage_Immagine {
+            get {
+                return ResourceManager.GetString("tabPage_Immagine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Attenzione!.
+        /// </summary>
+        public static string TitoloAttenzione {
+            get {
+                return ResourceManager.GetString("TitoloAttenzione", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Inserimento.
+        /// </summary>
+        public static string TitoloInserimento {
+            get {
+                return ResourceManager.GetString("TitoloInserimento", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Annulla.
+        /// </summary>
+        public static string tscmdAnnulla {
+            get {
+                return ResourceManager.GetString("tscmdAnnulla", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Apri.
+        /// </summary>
+        public static string tscmdApri {
+            get {
+                return ResourceManager.GetString("tscmdApri", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Cancella tutto.
+        /// </summary>
+        public static string tscmdCancellaTutto {
+            get {
+                return ResourceManager.GetString("tscmdCancellaTutto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Genera report.
+        /// </summary>
+        public static string tscmdGeneraReport {
+            get {
+                return ResourceManager.GetString("tscmdGeneraReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Salva.
+        /// </summary>
+        public static string tscmdSalva {
+            get {
+                return ResourceManager.GetString("tscmdSalva", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Imposta tolleranze.
+        /// </summary>
+        public static string tsmImpostaTolleranze {
+            get {
+                return ResourceManager.GetString("tsmImpostaTolleranze", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una stringa localizzata simile a Il valore immesso non è corretto!.
+        /// </summary>
+        public static string ValoreNonValido {
+            get {
+                return ResourceManager.GetString("ValoreNonValido", resourceCulture);
             }
         }
     }

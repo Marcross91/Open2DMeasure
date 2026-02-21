@@ -5,7 +5,9 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
+using System.Globalization;
 using System.IO;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -83,7 +85,7 @@ namespace Open2DMeasure {
                     }
                     AggiornaLimiti();
                 } else {
-                    MessageBox.Show("L'elemento selezionato non è corretto", "ATTENZIONE!");
+                    MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                 }
 
                 lbElementi.SelectedIndex = -1;
@@ -116,7 +118,7 @@ namespace Open2DMeasure {
             btnResetZoomImg.Enabled = false;
             chbRilevaPunto.Enabled = false;
             cbMisura.Enabled = false;
-            sslblScala.Text = "Scala: ND";
+            sslblScala.Text = Properties.Resources.sslblScala + "ND";
             pbImmagine.Width = 50;
             pbImmagine.Height = 50;
             traslaGRX = 0;
@@ -134,7 +136,7 @@ namespace Open2DMeasure {
             // Impostare i filtri per i tipi di file
             // L'utente potrà vedere solo i file con queste estensioni.
             openFileDialog.Filter = "Image Files(*.BMP;*.JPG;*.GIF;*.PNG)|*.BMP;*.JPG;*.GIF;*.PNG|All files (*.*)|*.*";
-            openFileDialog.Title = "Seleziona un'immagine";
+            openFileDialog.Title = "Select image";
 
             // Mostrare la finestra di dialogo e verificare se l'utente ha selezionato un file
             if (openFileDialog.ShowDialog() == DialogResult.OK) {
@@ -171,7 +173,7 @@ namespace Open2DMeasure {
 
                 } catch (Exception ex) {
                     // Gestione degli errori, per esempio se il file non è un'immagine valida
-                    MessageBox.Show("Errore durante il caricamento dell'immagine: " + ex.Message);
+                    MessageBox.Show(Properties.Resources.OperazioneKo + ": " + ex.Message);
                 }
             }
         }
@@ -182,7 +184,7 @@ namespace Open2DMeasure {
                 AzzeraTutto();
                 CaricaImmagine();
             } else {
-                var risp = Interaction.MsgBox("Sei sicuro di voler cancellare tutto?", MsgBoxStyle.YesNo, "ATTENZIONE!");
+                var risp = Interaction.MsgBox(Properties.Resources.CancellareTutto, MsgBoxStyle.YesNo, Properties.Resources.TitoloAttenzione);
                 if (risp == MsgBoxResult.Yes) {
                     AzzeraTutto();
                     CaricaImmagine();
@@ -191,7 +193,7 @@ namespace Open2DMeasure {
         }
 
         private void tscmdCancellaTutto_Click(object sender, EventArgs e) {
-            var risp = Interaction.MsgBox("Sei sicuro di voler cancellare tutto?", MsgBoxStyle.YesNo, "ATTENZIONE!");
+            var risp = Interaction.MsgBox(Properties.Resources.CancellareTutto, MsgBoxStyle.YesNo, Properties.Resources.TitoloAttenzione);
             if (risp == MsgBoxResult.Yes) {
                 AzzeraTutto();
             }
@@ -216,7 +218,7 @@ namespace Open2DMeasure {
         private void CalcolaScala(Punto p) {
             switch (cbModalitaScala.SelectedIndex) {
                 case -1:
-                    MessageBox.Show("Non hai selezionato la modalità di rilevamento della scala", "ATTENZIONE!");
+                    MessageBox.Show(Properties.Resources.ErrModScala, Properties.Resources.TitoloAttenzione);
                     break;
 
                 case 0:
@@ -225,20 +227,20 @@ namespace Open2DMeasure {
                         bool isInputValid = false;
                         double valore;
                         do {
-                            string val = Interaction.InputBox("Inserire la quota nominale:", "Inserimento");
+                            string val = Interaction.InputBox(Properties.Resources.InserireNominale, Properties.Resources.TitoloInserimento);
 
                             isInputValid = double.TryParse(val, out valore);
 
                             // Se l'input non è valido, mostra un messaggio di errore
                             if (!isInputValid) {
-                                MessageBox.Show("Valore non valido. Riprova.", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show(Properties.Resources.ValoreNonValido, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         } while (!isInputValid);
 
                         Misura d = new Misura((Punto)entitaGeometriche[0], (Punto)entitaGeometriche[1], false, 0, Color.Black);
                         fattoreScala = (double)d.Valore / valore / fattoreZoomImg;
                         entitaGeometriche.Clear();
-                        sslblScala.Text = "Scala: " + fattoreScala.ToString("F3");
+                        sslblScala.Text = Properties.Resources.sslblScala + ": " + fattoreScala.ToString("F3");
                     }
                     break;
 
@@ -248,20 +250,20 @@ namespace Open2DMeasure {
                         bool isInputValid = false;
                         double valore;
                         do {
-                            string val = Interaction.InputBox("Inserire la quota nominale:", "Inserimento");
+                            string val = Interaction.InputBox(Properties.Resources.InserireNominale, Properties.Resources.TitoloInserimento);
 
                             isInputValid = double.TryParse(val, out valore);
 
                             // Se l'input non è valido, mostra un messaggio di errore
                             if (!isInputValid) {
-                                MessageBox.Show("Valore non valido. Riprova.", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show(Properties.Resources.ValoreNonValido, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         } while (!isInputValid);
 
                         Misura d = new Misura((Punto)entitaGeometriche[0], (Punto)entitaGeometriche[1], false, Misura.Tipologia.DistanzaX, Color.Black);
                         fattoreScala = (double)d.ValoreX / valore / fattoreZoomImg;
                         entitaGeometriche.Clear();
-                        sslblScala.Text = "Scala: " + fattoreScala.ToString("F3");
+                        sslblScala.Text = Properties.Resources.sslblScala + ": " + fattoreScala.ToString("F3");
                     }
                     break;
 
@@ -271,20 +273,20 @@ namespace Open2DMeasure {
                         bool isInputValid = false;
                         double valore;
                         do {
-                            string val = Interaction.InputBox("Inserire la quota nominale:", "Inserimento");
+                            string val = Interaction.InputBox(Properties.Resources.InserireNominale, Properties.Resources.TitoloInserimento);
 
                             isInputValid = double.TryParse(val, out valore);
 
                             // Se l'input non è valido, mostra un messaggio di errore
                             if (!isInputValid) {
-                                MessageBox.Show("Valore non valido. Riprova.", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show(Properties.Resources.ValoreNonValido, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         } while (!isInputValid);
 
                         Misura d = new Misura((Punto)entitaGeometriche[0], (Punto)entitaGeometriche[1], false, Misura.Tipologia.DistanzaY, Color.Black);
                         fattoreScala = (double)d.ValoreY / valore / fattoreZoomImg;
                         entitaGeometriche.Clear();
-                        sslblScala.Text = "Scala: " + fattoreScala.ToString("F3");
+                        sslblScala.Text = Properties.Resources.sslblScala + ": " + fattoreScala.ToString("F3");
                     }
                     break;
 
@@ -393,10 +395,6 @@ namespace Open2DMeasure {
 
         private void cmdCostruisci_Click(object sender, EventArgs e) {
             switch (cbCostruzione.SelectedIndex) {
-                case -1:
-                    MessageBox.Show("Non hai selezionato un metodo di costruzione", "ATTENZIONE!");
-                    break;
-
                 case 0: // Punto nominale
                     double x = 0, y = 0;
                     string val;
@@ -404,7 +402,7 @@ namespace Open2DMeasure {
 
                     // --- COORDINATA X ---
                     while (true) {
-                        val = Interaction.InputBox("Inserire la coordinata X del punto:", "Inserimento", "0");
+                        val = Interaction.InputBox(Properties.Resources.InserireCoordX, Properties.Resources.TitoloInserimento, "0");
 
                         // Se preme Annulla (stringa vuota), esce completamente dal case
                         if (string.IsNullOrEmpty(val)) return;
@@ -415,13 +413,13 @@ namespace Open2DMeasure {
                         if (double.TryParse(inputNorm, System.Globalization.NumberStyles.Any, invar, out x)) {
                             break; // Input valido, esce dal ciclo while
                         } else {
-                            MessageBox.Show("Valore X non valido. Inserire un numero.", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show(Properties.Resources.ValoreNonValido, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
 
                     // --- COORDINATA Y ---
                     while (true) {
-                        val = Interaction.InputBox("Inserire la coordinata Y del punto:", "Inserimento", "0");
+                        val = Interaction.InputBox(Properties.Resources.InserireCoordY, Properties.Resources.TitoloInserimento, "0");
 
                         // Se preme Annulla, esce
                         if (string.IsNullOrEmpty(val)) return;
@@ -432,7 +430,7 @@ namespace Open2DMeasure {
                         if (double.TryParse(inputNorm, System.Globalization.NumberStyles.Any, invar, out y)) {
                             break; // Input valido, esce dal ciclo while
                         } else {
-                            MessageBox.Show("Valore Y non valido. Inserire un numero.", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show(Properties.Resources.ValoreNonValido, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
 
@@ -450,7 +448,7 @@ namespace Open2DMeasure {
 
                             while (true) {
                                 // Suggeriamo 50 (punto medio) come valore predefinito
-                                val = Interaction.InputBox("Inserire la percentuale (0-100):", "Inserimento Punto su Linea", "50");
+                                val = Interaction.InputBox(Properties.Resources.InserirePerc, Properties.Resources.TitoloInserimento, "50");
 
                                 // 1. Gestione tasto Annulla: se la stringa è vuota, usciamo dal case
                                 if (string.IsNullOrEmpty(val)) return;
@@ -462,16 +460,16 @@ namespace Open2DMeasure {
                                 if (double.TryParse(inputNorm, System.Globalization.NumberStyles.Any, invar, out percentuale)) {
                                     break; // Input valido, usciamo dal ciclo
                                 } else {
-                                    MessageBox.Show("Valore percentuale non valido. Inserire un numero.", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    MessageBox.Show(Properties.Resources.ValoreNonValido, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 }
                             }
                             // Aggiunta del punto basato sulla linea e sulla percentuale fornita
                             entitaGeometriche.Add(new Punto(l, percentuale, true, coloreSelezionato));
                         } else {
-                            MessageBox.Show("L'elemento selezionato non è una linea!", "ATTENZIONE!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     } else {
-                        MessageBox.Show("Selezionare esattamente una linea dalla lista.", "ATTENZIONE!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     break;
 
@@ -505,7 +503,7 @@ namespace Open2DMeasure {
                             if (l1.M != l2.M) {
                                 entitaGeometriche.Add(new Punto(l1, l2, true, coloreSelezionato));
                             } else {
-                                MessageBox.Show("Le due linee sono parallele", "ATTENZIONE!");
+                                MessageBox.Show(Properties.Resources.NoIntersezione, Properties.Resources.TitoloAttenzione);
                             }
                         } else if ((lineeTrovate == 1) && (cerchiTrovati == 1)) {
                             double dL = l1.A * c.Centro.X + l1.B * c.Centro.Y + l1.C;
@@ -516,13 +514,13 @@ namespace Open2DMeasure {
                             } else if (Math.Pow(c.R, 2) - (Math.Pow(dL, 2) / S) == 0) {
                                 entitaGeometriche.Add(new Punto(l1, c, 1, true, coloreSelezionato));
                             } else {
-                                MessageBox.Show("Il cerchio e la linea non si intersecano", "ATTENZIONE!");
+                                MessageBox.Show(Properties.Resources.NoIntersezione, Properties.Resources.TitoloAttenzione);
                             }
                         } else {
-                            MessageBox.Show("Gli elementi selezionati non sono corretti", "ATTENZIONE!");
+                            MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                         }
                     } else {
-                        MessageBox.Show("Il numero di elementi selezionati non è corretto", "ATTENZIONE!");
+                        MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                     }
                     break;
 
@@ -536,7 +534,7 @@ namespace Open2DMeasure {
 
                             // --- SPOSTAMENTO X ---
                             while (true) {
-                                val = Interaction.InputBox("Inserire lo spostamento in X del punto:", "Offset X", "0");
+                                val = Interaction.InputBox(Properties.Resources.InserireCoordX, Properties.Resources.TitoloInserimento, "0");
 
                                 // Se preme Annulla, esce dal comando
                                 if (string.IsNullOrEmpty(val)) return;
@@ -547,13 +545,13 @@ namespace Open2DMeasure {
                                 if (double.TryParse(inputNorm, System.Globalization.NumberStyles.Any, invar, out dX)) {
                                     break; // OK, passa al prossimo input
                                 } else {
-                                    MessageBox.Show("Valore X non valido. Inserire un numero.", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    MessageBox.Show(Properties.Resources.ValoreNonValido, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 }
                             }
 
                             // --- SPOSTAMENTO Y ---
                             while (true) {
-                                val = Interaction.InputBox("Inserire lo spostamento in Y del punto:", "Offset Y", "0");
+                                val = Interaction.InputBox(Properties.Resources.InserireCoordY, Properties.Resources.TitoloInserimento, "0");
 
                                 // Se preme Annulla, esce dal comando
                                 if (string.IsNullOrEmpty(val)) return;
@@ -564,17 +562,17 @@ namespace Open2DMeasure {
                                 if (double.TryParse(inputNorm, System.Globalization.NumberStyles.Any, invar, out dY)) {
                                     break; // OK, esce dal ciclo
                                 } else {
-                                    MessageBox.Show("Valore Y non valido. Inserire un numero.", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    MessageBox.Show(Properties.Resources.ValoreNonValido, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 }
                             }
 
                             // Calcolo del nuovo punto traslato rispetto al punto selezionato
                             entitaGeometriche.Add(new Punto(pBase.X + dX, pBase.Y + dY, true, coloreSelezionato));
                         } else {
-                            MessageBox.Show("L'elemento selezionato non è un Punto!", "ATTENZIONE!");
+                            MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                         }
                     } else {
-                        MessageBox.Show("Selezionare un punto dalla lista per applicare l'offset.", "ATTENZIONE!");
+                        MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                     }
                     break;
 
@@ -589,10 +587,10 @@ namespace Open2DMeasure {
                             p2 = (Punto)elemento2;
                             entitaGeometriche.Add(new Linea(p1, p2, true, coloreSelezionato));
                         } else {
-                            MessageBox.Show("Gli elementi selezionati non sono corretti", "ATTENZIONE!");
+                            MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                         }
                     } else {
-                        MessageBox.Show("Il numero di elementi selezionati non è corretto", "ATTENZIONE!");
+                        MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                     }
                     break;
 
@@ -621,7 +619,7 @@ namespace Open2DMeasure {
                             int angolo = 0;
 
                             while (true) {
-                                val = Interaction.InputBox("Inserire l'angolo di rotazione (gradi):", "Rotazione", "0");
+                                val = Interaction.InputBox(Properties.Resources.InserireAngolo, Properties.Resources.TitoloInserimento, "0");
 
                                 // Gestione Annulla
                                 if (string.IsNullOrEmpty(val)) return;
@@ -629,15 +627,15 @@ namespace Open2DMeasure {
                                 if (int.TryParse(val, out angolo)) {
                                     break;
                                 } else {
-                                    MessageBox.Show("Inserire un numero intero valido per l'angolo.", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    MessageBox.Show(Properties.Resources.ValoreNonValido, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 }
                             }
                             entitaGeometriche.Add(new Linea(l, p, angolo, true, coloreSelezionato));
                         } else {
-                            MessageBox.Show("Selezionare una Linea e un Punto per questa operazione.", "ATTENZIONE!");
+                            MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                         }
                     } else {
-                        MessageBox.Show("Selezionare esattamente due elementi (un punto e una linea).", "ATTENZIONE!");
+                        MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                     }
                     break;
 
@@ -649,7 +647,7 @@ namespace Open2DMeasure {
                             invar = System.Globalization.CultureInfo.InvariantCulture;
 
                             while (true) {
-                                val = Interaction.InputBox("Inserire il valore del raggio:", "Inserimento Raggio", "10");
+                                val = Interaction.InputBox(Properties.Resources.InserireRaggio, Properties.Resources.TitoloInserimento, "10");
 
                                 // Gestione Annulla
                                 if (string.IsNullOrEmpty(val)) return;
@@ -659,17 +657,17 @@ namespace Open2DMeasure {
 
                                 if (double.TryParse(inputNorm, System.Globalization.NumberStyles.Any, invar, out raggio)) {
                                     if (raggio > 0) break;
-                                    else MessageBox.Show("Il raggio deve essere maggiore di zero.", "Errore");
+                                    else MessageBox.Show(Properties.Resources.ValoreNonValido, Properties.Resources.TitoloAttenzione);
                                 } else {
-                                    MessageBox.Show("Valore del raggio non valido.", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    MessageBox.Show(Properties.Resources.ValoreNonValido, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 }
                             }
                             entitaGeometriche.Add(new Cerchio(p, raggio, true, coloreSelezionato));
                         } else {
-                            MessageBox.Show("L'elemento selezionato deve essere un Punto (Centro).", "ATTENZIONE!");
+                            MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                         }
                     } else {
-                        MessageBox.Show("Selezionare un punto per definire il centro del cerchio.", "ATTENZIONE!");
+                        MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                     }
                     break;
 
@@ -701,10 +699,10 @@ namespace Open2DMeasure {
                         if (puntiTrovati == 3) {
                             entitaGeometriche.Add(new Cerchio(p1, p2, p3, true, coloreSelezionato));
                         } else {
-                            MessageBox.Show("Gli elementi selezionati non sono corretti", "ATTENZIONE!");
+                            MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                         }
                     } else {
-                        MessageBox.Show("Il numero di elementi selezionati non è corretto", "ATTENZIONE!");
+                        MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                     }
                     break;
 
@@ -715,10 +713,10 @@ namespace Open2DMeasure {
                             Cerchio c = (Cerchio)elemento;
                             entitaGeometriche.Add(new Punto(c.Centro.X, c.Centro.Y, true, coloreSelezionato));
                         } else {
-                            MessageBox.Show("Gli elementi selezionati non sono corretti", "ATTENZIONE!");
+                            MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                         }
                     } else {
-                        MessageBox.Show("Il numero di elementi selezionati non è corretto", "ATTENZIONE!");
+                        MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                     }
                     break;
             }
@@ -789,10 +787,10 @@ namespace Open2DMeasure {
                             c2 = (Cerchio)elemento2;
                             entitaGeometriche.Add(new Misura(c1, c2, 1, true, 0, coloreSelezionato)); //da modificare per inserire la posizione 1,2,3
                         } else {
-                            MessageBox.Show("Gli elementi selezionati non sono corretti", "ATTENZIONE!");
+                            MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                         }
                     } else {
-                        MessageBox.Show("Il numero di elementi selezionati non è corretto", "ATTENZIONE!");
+                        MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                     }
                     break;
 
@@ -825,10 +823,10 @@ namespace Open2DMeasure {
                             c2 = (Cerchio)elemento2;
                             entitaGeometriche.Add(new Misura(c1, c2, 1, true, Misura.Tipologia.DistanzaX, coloreSelezionato)); //da modificare per inserire la posizione 1,2,3
                         } else {
-                            MessageBox.Show("Gli elementi selezionati non sono corretti", "ATTENZIONE!");
+                            MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                         }
                     } else {
-                        MessageBox.Show("Il numero di elementi selezionati non è corretto", "ATTENZIONE!");
+                        MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                     }
                     break;
 
@@ -861,10 +859,10 @@ namespace Open2DMeasure {
                             c2 = (Cerchio)elemento2;
                             entitaGeometriche.Add(new Misura(c1, c2, 1, true, Misura.Tipologia.DistanzaY, coloreSelezionato)); //da modificare per inserire la posizione 1,2,3
                         } else {
-                            MessageBox.Show("Gli elementi selezionati non sono corretti", "ATTENZIONE!");
+                            MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                         }
                     } else {
-                        MessageBox.Show("Il numero di elementi selezionati non è corretto", "ATTENZIONE!");
+                        MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                     }
                     break;
 
@@ -876,10 +874,10 @@ namespace Open2DMeasure {
                             c1 = (Cerchio)elemento1;
                             entitaGeometriche.Add(new Misura(c1, true, Misura.Tipologia.Diametro, coloreSelezionato));
                         } else {
-                            MessageBox.Show("Gli elementi selezionati non sono corretti", "ATTENZIONE!");
+                            MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                         }
                     } else {
-                        MessageBox.Show("Il numero di elementi selezionati non è corretto", "ATTENZIONE!");
+                        MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                     }
                     break;
 
@@ -891,10 +889,10 @@ namespace Open2DMeasure {
                             c1 = (Cerchio)elemento1;
                             entitaGeometriche.Add(new Misura(c1, true, Misura.Tipologia.Raggio, coloreSelezionato));
                         } else {
-                            MessageBox.Show("Gli elementi selezionati non sono corretti", "ATTENZIONE!");
+                            MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                         }
                     } else {
-                        MessageBox.Show("Il numero di elementi selezionati non è corretto", "ATTENZIONE!");
+                        MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                     }
                     break;
 
@@ -909,10 +907,10 @@ namespace Open2DMeasure {
                             l2 = (Linea)elemento2;
                             entitaGeometriche.Add(new Misura(l1, l2, true, Misura.Tipologia.Angolo, coloreSelezionato));
                         } else {
-                            MessageBox.Show("Gli elementi selezionati non sono corretti", "ATTENZIONE!");
+                            MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                         }
                     } else {
-                        MessageBox.Show("Il numero di elementi selezionati non è corretto", "ATTENZIONE!");
+                        MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                     }
                     break;
             }
@@ -1072,23 +1070,25 @@ namespace Open2DMeasure {
 
         private void panGrafico_Paint(object sender, PaintEventArgs e) {
 
-            
-
             // L'oggetto 'g' contiene gli strumenti di disegno (GDI+)
             Graphics g = e.Graphics;
             g.TranslateTransform(panGrafico.AutoScrollPosition.X, panGrafico.AutoScrollPosition.Y);
 
             Punto minGR = TrovaMinGR(entitaGeometriche);
             Punto maxGR = TrovaMaxGR(entitaGeometriche);
+
             if (minGR != null && maxGR != null) {
+                int w = Convert.ToInt32((maxGR.X - minGR.X) * fattoreScala * fattoreZoomGr) + 100;
+                int h = Convert.ToInt32((maxGR.Y - minGR.Y) * fattoreScala * fattoreZoomGr) + 100;
                 if (Math.Abs(minGR.X) > allineamento.o.X) {
-                    traslaGRX = (float)((-minGR.X) * fattoreScala * fattoreZoomGr);
+                    traslaGRX = (float)((Math.Abs(minGR.X) - allineamento.o.X) * fattoreScala * fattoreZoomGr + 50);
                     g.TranslateTransform(traslaGRX, 0);
                 }
                 if (Math.Abs(minGR.Y) > allineamento.o.Y) {
-                    traslaGRY = (float)((-minGR.Y) * fattoreScala * fattoreZoomGr);
+                    traslaGRY = (float)((Math.Abs(minGR.Y) - allineamento.o.Y) * fattoreScala * fattoreZoomGr + 50);
                     g.TranslateTransform(0, traslaGRY);
                 }
+                panGrafico.AutoScrollMinSize = new Size(w, h);
             } else {
                 panGrafico.AutoScrollMinSize = new Size(pbImmagine.Width, pbImmagine.Height);
                 traslaGRX = 0;
@@ -1298,7 +1298,7 @@ namespace Open2DMeasure {
                     ApplicaZoom();
 
                     using (FolderBrowserDialog fbd = new FolderBrowserDialog()) {
-                        fbd.Description = "Seleziona la cartella dove salvare il progetto";
+                        //fbd.Description = "Seleziona la cartella dove salvare il progetto";
 
                         if (fbd.ShowDialog() == DialogResult.OK) {
                             string pathCartella = fbd.SelectedPath;
@@ -1348,21 +1348,21 @@ namespace Open2DMeasure {
                                     }
                                 }
 
-                                MessageBox.Show("Salvataggio completato con successo!", "Salvataggio", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                MessageBox.Show(Properties.Resources.OperazioneOk, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Information);
                             } catch (Exception ex) {
-                                MessageBox.Show("Errore durante il salvataggio: " + ex.Message, "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show(Properties.Resources.OperazioneKo + ": " + ex.Message, "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }
                     }
                 }
             } else {
-                MessageBox.Show("Errore durante il salvataggio: la costruzione deve essere attiva", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.OperazioneKo, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void ApriFile() {
             using (FolderBrowserDialog fbd = new FolderBrowserDialog()) {
-                fbd.Description = "Seleziona la cartella del progetto da aprire";
+                //fbd.Description = "Seleziona la cartella del progetto da aprire";
 
                 if (fbd.ShowDialog() == DialogResult.OK) {
                     string pathCartella = fbd.SelectedPath;
@@ -1370,7 +1370,7 @@ namespace Open2DMeasure {
                     string pathImmagine = Path.Combine(pathCartella, "immagine_caricata.png");
 
                     if (!File.Exists(pathDati)) {
-                        MessageBox.Show("File dati_progetto.txt non trovato nella cartella selezionata.", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(Properties.Resources.OperazioneKo, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
 
@@ -1477,10 +1477,10 @@ namespace Open2DMeasure {
 
                         // 4. Aggiorna l'interfaccia
                         AggiornaLimiti();
-                        MessageBox.Show("Progetto caricato correttamente!", "Apertura", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(Properties.Resources.OperazioneOk, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     } catch (Exception ex) {
-                        MessageBox.Show("Errore durante l'apertura: " + ex.Message, "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(Properties.Resources.OperazioneOk + ": " + ex.Message, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
@@ -1491,7 +1491,7 @@ namespace Open2DMeasure {
                 AzzeraTutto();
                 ApriFile();
             } else {
-                var risp = Interaction.MsgBox("Sei sicuro di voler aprire? Il lavoro attuale verrà cancellato", MsgBoxStyle.YesNo, "ATTENZIONE!");
+                var risp = Interaction.MsgBox(Properties.Resources.CancellareTutto, MsgBoxStyle.YesNo, Properties.Resources.TitoloAttenzione);
                 if (risp == MsgBoxResult.Yes) {
                     AzzeraTutto();
                     ApriFile();
@@ -1542,13 +1542,13 @@ namespace Open2DMeasure {
                                 }
                             }
                         }
-                        MessageBox.Show("Report generato con successo!", "Successo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(Properties.Resources.OperazioneOk, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     } catch (Exception ex) {
-                        MessageBox.Show("Errore durante la generazione del report: " + ex.Message, "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(Properties.Resources.OperazioneKo + ": " + ex.Message, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             } else {
-                MessageBox.Show("Errore durante il salvataggio: la costruzione deve essere attiva", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.OperazioneKo, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -1573,15 +1573,15 @@ namespace Open2DMeasure {
                     var invar = System.Globalization.CultureInfo.InvariantCulture;
 
                     // --- NOMINALE ---
-                    valNom = Interaction.InputBox($"Valore NOMINALE {m.Nome}:", "Nominale", m.ValoreNominale.ToString(invar));
+                    valNom = Interaction.InputBox(Properties.Resources.InserireNominale + " di " + m.Nome, Properties.Resources.TitoloInserimento);
                     if (string.IsNullOrEmpty(valNom)) return; // Annulla
 
                     // --- TOLLERANZA PIÙ ---
-                    valPiu = Interaction.InputBox($"Tolleranza SUPERIORE per {m.Nome}:", "Tolleranze", m.TolPiu.ToString(invar));
+                    valPiu = Interaction.InputBox(Properties.Resources.InserireTolPiu + " di " + m.Nome, Properties.Resources.TitoloInserimento);
                     if (string.IsNullOrEmpty(valPiu)) return; // Annulla
 
                     // --- TOLLERANZA MENO ---
-                    valMeno = Interaction.InputBox($"Tolleranza INFERIORE per {m.Nome}:", "Tolleranze", m.TolMeno.ToString(invar));
+                    valMeno = Interaction.InputBox(Properties.Resources.InserireTolMeno + " di " + m.Nome, Properties.Resources.TitoloInserimento);
                     if (string.IsNullOrEmpty(valMeno)) return; // Annulla
 
                     // Parsing e assegnazione
@@ -1592,13 +1592,13 @@ namespace Open2DMeasure {
                         m.TolMeno = tM;
                         m.ValoreNominale = vN;
 
-                        MessageBox.Show("Valori aggiornati con successo!", "OK");
+                        MessageBox.Show(Properties.Resources.OperazioneOk, Properties.Resources.TitoloAttenzione);
                         lbElementi.Invalidate(); // Forza il ridisegno se necessario
                     } else {
-                        MessageBox.Show("Valori inseriti non validi.", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(Properties.Resources.OperazioneKo, Properties.Resources.TitoloAttenzione, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 } else {
-                    MessageBox.Show("L'elemento selezionato non è una misura!", "Attenzione");
+                    MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                 }
             }
         }
@@ -1645,7 +1645,7 @@ namespace Open2DMeasure {
                     }
                     AggiornaLimiti();
                 } else {
-                    MessageBox.Show("L'elemento selezionato non è corretto", "ATTENZIONE!");
+                    MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                 }
 
                 lbElementi.SelectedIndex = -1;
@@ -1688,7 +1688,7 @@ namespace Open2DMeasure {
                     }
                     AggiornaLimiti();
                 } else {
-                    MessageBox.Show("L'elemento selezionato non è corretto", "ATTENZIONE!");
+                    MessageBox.Show(Properties.Resources.ErroreSelezione, Properties.Resources.TitoloAttenzione);
                 }
 
                 lbElementi.SelectedIndex = -1;
@@ -1697,6 +1697,103 @@ namespace Open2DMeasure {
 
         private void tableLayoutPanel1_MouseMove(object sender, MouseEventArgs e) {
 
+        }
+
+        private void SetLanguage(string cultureCode) {
+            var culture = new CultureInfo(cultureCode);
+
+            // Imposta la lingua per il thread attuale
+            Thread.CurrentThread.CurrentCulture = culture;
+            Thread.CurrentThread.CurrentUICulture = culture;
+
+            // Imposta la lingua predefinita per tutti i futuri thread (fondamentale in .NET moderno)
+            CultureInfo.DefaultThreadCurrentCulture = culture;
+            CultureInfo.DefaultThreadCurrentUICulture = culture;
+
+            UpdateAllControlsText();
+
+        }
+
+        private void UpdateAllControlsText() {
+            // 1. Cerca il titolo del Form nel file risorse. 
+            // Se non lo trova, lascia quello che c'è già senza dare errore.
+            string title = Properties.Resources.ResourceManager.GetString("MainTitle");
+            if (!string.IsNullOrEmpty(title)) {
+                this.Text = title;
+            }
+
+            // 2. Cicla su tutti i controlli
+            foreach (Control c in this.Controls) {
+                UpdateSingleControlText(c);
+            }
+        }
+
+        private void UpdateSingleControlText(Object c) {
+            // 1. GESTIONE CONTROLLI STANDARD (Label, Button, ecc.)
+            if (c is Control ctrl) {
+                string translatedText = Properties.Resources.ResourceManager.GetString(ctrl.Name);
+                if (!string.IsNullOrEmpty(translatedText)) ctrl.Text = translatedText;
+                if (ctrl is ComboBox cb) cb.Text = "";
+
+                // Se è un contenitore di ToolStrip (MenuStrip, StatusStrip, ToolStrip)
+                if (ctrl is ToolStrip ts) {
+                    foreach (ToolStripItem item in ts.Items) {
+                        UpdateSingleControlText(item); // Chiamata ricorsiva sull'item
+                    }
+                } else if (ctrl is ComboBox cmb) {
+                    // Cerchiamo la chiave "NomeControlloItems" (es. cmbModeItems)
+                    string entries = Properties.Resources.ResourceManager.GetString(cmb.Name);
+                    if (!string.IsNullOrEmpty(entries)) {
+                        int savedIndex = cmb.SelectedIndex; // Salviamo la scelta dell'utente
+                        cmb.Items.Clear();                  // Svuotiamo la lista vecchia
+
+                        // Dividiamo la stringa e aggiungiamo i nuovi elementi
+                        string[] items = entries.Split(',');
+                        foreach (string s in items) {
+                            cmb.Items.Add(s.Trim());
+                        }
+                        
+                        // Ripristiniamo la scelta (se valida)
+                        if (savedIndex >= 0 && savedIndex < cmb.Items.Count)
+                            cmb.SelectedIndex = savedIndex;
+                    }
+                } else {
+                // Ricorsione per i figli classici (Panel, GroupBox)
+                foreach (Control child in ctrl.Controls) {
+                    UpdateSingleControlText(child);
+                }
+            } 
+            }
+            // 2. GESTIONE TOOLSTRIP ITEMS (Menu, Bottoni ToolStrip, StatusLabel)
+            else if (c is ToolStripItem item) {
+                // Cerchiamo la traduzione per il ToolTip (se presente)
+                // Convenzione: NomeControllo_Tip nel file .resx
+                string translatedTip = Properties.Resources.ResourceManager.GetString(item.Name);
+                if (!string.IsNullOrEmpty(translatedTip)) item.ToolTipText = translatedTip;
+
+                // Se è un menu a discesa (ToolStripMenuItem), dobbiamo scansionare i sotto-menu
+                if (item is ToolStripDropDownItem dropDownItem && dropDownItem.HasDropDownItems) {
+                    foreach (ToolStripItem subItem in dropDownItem.DropDownItems) {
+                        UpdateSingleControlText(subItem);
+                    }
+                }
+            } 
+
+        }
+
+
+        private void tsLingua_Click(object sender, EventArgs e) {
+            // Verifichiamo la lingua attuale (basandoci sul testo o su una variabile)
+            if (tsLingua.Text == "ITA") {
+                SetLanguage("en");
+                tsLingua.Text = "ENG";
+                // lblLangToggle.Image = Properties.Resources.flag_uk; // Se hai le icone
+            } else {
+                SetLanguage("it");
+                tsLingua.Text = "ITA";
+                // lblLangToggle.Image = Properties.Resources.flag_it;
+            }
+            
         }
 
         private void pbImmagine_MouseDown(object sender, MouseEventArgs e) {

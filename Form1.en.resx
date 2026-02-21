@@ -118,334 +118,47 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="cbModalitaScala.Items" xml:space="preserve">
-    <value>Distanza nota</value>
+    <value>Known distance</value>
   </data>
   <data name="cbModalitaScala.Items1" xml:space="preserve">
-    <value>DistanzaX nota</value>
+    <value>Known X distance</value>
   </data>
   <data name="cbModalitaScala.Items2" xml:space="preserve">
-    <value>DistanzaY nota</value>
+    <value>Known Y distance</value>
   </data>
   <data name="cbModalitaScala.Items3" xml:space="preserve">
-    <value>Automatica</value>
+    <value>Automatic</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="cbModalitaScala.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 67</value>
-  </data>
-  <data name="cbModalitaScala.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 24</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="cbModalitaScala.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cbModalitaScala.Name" xml:space="preserve">
-    <value>cbModalitaScala</value>
-  </data>
-  <data name="&gt;&gt;cbModalitaScala.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbModalitaScala.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;cbModalitaScala.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblModalitaScala.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+    <value>120, 22</value>
   </data>
   <data name="lblModalitaScala.Location" type="System.Drawing.Point, System.Drawing">
-    <value>123, 48</value>
+    <value>197, 3</value>
   </data>
   <data name="lblModalitaScala.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 16</value>
-  </data>
-  <data name="lblModalitaScala.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>138, 16</value>
   </data>
   <data name="lblModalitaScala.Text" xml:space="preserve">
-    <value>Modalità di rilevamento della scala:</value>
-  </data>
-  <data name="&gt;&gt;lblModalitaScala.Name" xml:space="preserve">
-    <value>lblModalitaScala</value>
-  </data>
-  <data name="&gt;&gt;lblModalitaScala.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblModalitaScala.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;lblModalitaScala.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="cmdDefinisciOrigine.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cmdDefinisciOrigine.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 21</value>
-  </data>
-  <data name="cmdDefinisciOrigine.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 40</value>
-  </data>
-  <data name="cmdDefinisciOrigine.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>Scale detection mode</value>
   </data>
   <data name="cmdDefinisciOrigine.Text" xml:space="preserve">
-    <value>Definisci origine</value>
-  </data>
-  <data name="&gt;&gt;cmdDefinisciOrigine.Name" xml:space="preserve">
-    <value>cmdDefinisciOrigine</value>
-  </data>
-  <data name="&gt;&gt;cmdDefinisciOrigine.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdDefinisciOrigine.Parent" xml:space="preserve">
-    <value>gbAllineamento</value>
-  </data>
-  <data name="&gt;&gt;cmdDefinisciOrigine.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="cmdDefinisciAsseX.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cmdDefinisciAsseX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 21</value>
-  </data>
-  <data name="cmdDefinisciAsseX.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 40</value>
-  </data>
-  <data name="cmdDefinisciAsseX.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>Define origin</value>
   </data>
   <data name="cmdDefinisciAsseX.Text" xml:space="preserve">
-    <value>Definisci asse X</value>
-  </data>
-  <data name="&gt;&gt;cmdDefinisciAsseX.Name" xml:space="preserve">
-    <value>cmdDefinisciAsseX</value>
-  </data>
-  <data name="&gt;&gt;cmdDefinisciAsseX.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdDefinisciAsseX.Parent" xml:space="preserve">
-    <value>gbAllineamento</value>
-  </data>
-  <data name="&gt;&gt;cmdDefinisciAsseX.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="cmdDefinisciAsseY.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cmdDefinisciAsseY.Location" type="System.Drawing.Point, System.Drawing">
-    <value>314, 21</value>
-  </data>
-  <data name="cmdDefinisciAsseY.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 40</value>
-  </data>
-  <data name="cmdDefinisciAsseY.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>Define X axle</value>
   </data>
   <data name="cmdDefinisciAsseY.Text" xml:space="preserve">
-    <value>Definisci asse Y</value>
-  </data>
-  <data name="&gt;&gt;cmdDefinisciAsseY.Name" xml:space="preserve">
-    <value>cmdDefinisciAsseY</value>
-  </data>
-  <data name="&gt;&gt;cmdDefinisciAsseY.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdDefinisciAsseY.Parent" xml:space="preserve">
-    <value>gbAllineamento</value>
-  </data>
-  <data name="&gt;&gt;cmdDefinisciAsseY.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="gbAllineamento.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="gbAllineamento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>450, 75</value>
-  </data>
-  <data name="gbAllineamento.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>Define X axle</value>
   </data>
   <data name="gbAllineamento.Text" xml:space="preserve">
-    <value>Allineamento</value>
-  </data>
-  <data name="&gt;&gt;gbAllineamento.Name" xml:space="preserve">
-    <value>gbAllineamento</value>
-  </data>
-  <data name="&gt;&gt;gbAllineamento.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbAllineamento.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;gbAllineamento.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="cmslbElementi.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>124, 1</value>
-  </metadata>
-  <data name="cmslbElementi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 28</value>
-  </data>
-  <data name="&gt;&gt;cmslbElementi.Name" xml:space="preserve">
-    <value>cmslbElementi</value>
-  </data>
-  <data name="&gt;&gt;cmslbElementi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lbElementi.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lbElementi.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lbElementi.ItemHeight" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="lbElementi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1553, 123</value>
-  </data>
-  <data name="lbElementi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 781</value>
-  </data>
-  <data name="lbElementi.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;lbElementi.Name" xml:space="preserve">
-    <value>lbElementi</value>
-  </data>
-  <data name="&gt;&gt;lbElementi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbElementi.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;lbElementi.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tsmImpostaTolleranze.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 24</value>
-  </data>
-  <data name="tsmImpostaTolleranze.Text" xml:space="preserve">
-    <value>Imposta tolleranze</value>
-  </data>
-  <data name="pbImmagine.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="pbImmagine.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
-  </data>
-  <data name="pbImmagine.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;pbImmagine.Name" xml:space="preserve">
-    <value>pbImmagine</value>
-  </data>
-  <data name="&gt;&gt;pbImmagine.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbImmagine.Parent" xml:space="preserve">
-    <value>panImmagine</value>
-  </data>
-  <data name="&gt;&gt;pbImmagine.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panGrafico.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="panGrafico.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panGrafico.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>Alignment</value>
   </data>
   <data name="panGrafico.Size" type="System.Drawing.Size, System.Drawing">
     <value>1524, 690</value>
   </data>
-  <data name="panGrafico.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;panGrafico.Name" xml:space="preserve">
-    <value>panGrafico</value>
-  </data>
-  <data name="&gt;&gt;panGrafico.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panGrafico.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;panGrafico.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="ssStato.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="tsLingua.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 20</value>
-  </data>
-  <data name="tsLingua.Text" xml:space="preserve">
-    <value>ITA</value>
-  </data>
-  <data name="sslblScala.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 20</value>
-  </data>
   <data name="sslblScala.Text" xml:space="preserve">
-    <value>Scala: ND</value>
-  </data>
-  <data name="ssStato.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 934</value>
-  </data>
-  <data name="ssStato.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1900, 26</value>
-  </data>
-  <data name="ssStato.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="ssStato.Text" xml:space="preserve">
-    <value>statusStrip1</value>
-  </data>
-  <data name="&gt;&gt;ssStato.Name" xml:space="preserve">
-    <value>ssStato</value>
-  </data>
-  <data name="&gt;&gt;ssStato.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ssStato.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ssStato.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <metadata name="tsComandi.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>257, 4</value>
-  </metadata>
-  <data name="tsComandi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tsComandi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1900, 27</value>
-  </data>
-  <data name="tsComandi.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="tsComandi.Text" xml:space="preserve">
-    <value>toolStrip1</value>
-  </data>
-  <data name="&gt;&gt;tsComandi.Name" xml:space="preserve">
-    <value>tsComandi</value>
-  </data>
-  <data name="&gt;&gt;tsComandi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsComandi.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tsComandi.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>Scale: ND</value>
   </data>
   <data name="tscmdNuovo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -456,17 +169,8 @@
         AElFTkSuQmCC
 </value>
   </data>
-  <data name="tscmdNuovo.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tscmdNuovo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 28</value>
-  </data>
-  <data name="tscmdNuovo.Text" xml:space="preserve">
-    <value>toolStripButton1</value>
-  </data>
   <data name="tscmdNuovo.ToolTipText" xml:space="preserve">
-    <value>Nuovo</value>
+    <value>New</value>
   </data>
   <data name="tscmdApri.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -480,17 +184,8 @@
         3+8O0CLKbLdTzghddLbbKbcUUNvtlEPQZS1AfRegvgtQ360INBV/zPd3xJ2KjzMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="tscmdApri.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tscmdApri.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 28</value>
-  </data>
-  <data name="tscmdApri.Text" xml:space="preserve">
-    <value>toolStripButton1</value>
-  </data>
   <data name="tscmdApri.ToolTipText" xml:space="preserve">
-    <value>Apri</value>
+    <value>Open</value>
   </data>
   <data name="tscmdSalva.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -501,20 +196,8 @@
         DNKLbBaKwdTENDL4038AgPSFFLyw6A0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="tscmdSalva.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tscmdSalva.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 28</value>
-  </data>
-  <data name="tscmdSalva.Text" xml:space="preserve">
-    <value>toolStripButton1</value>
-  </data>
   <data name="tscmdSalva.ToolTipText" xml:space="preserve">
-    <value>Salva</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>6, 31</value>
+    <value>Save</value>
   </data>
   <data name="tscmdAnnulla.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -528,17 +211,8 @@
         wkRbAjKoZukJki0AYZKCC2QoyHBSLABhkiMeZDgpFrx79+k/AGkAzVGX0XxOAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="tscmdAnnulla.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tscmdAnnulla.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 28</value>
-  </data>
-  <data name="tscmdAnnulla.Text" xml:space="preserve">
-    <value>toolStripButton1</value>
-  </data>
   <data name="tscmdAnnulla.ToolTipText" xml:space="preserve">
-    <value>Annulla</value>
+    <value>Delete</value>
   </data>
   <data name="tscmdCancellaTutto.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -555,20 +229,8 @@
         AElFTkSuQmCC
 </value>
   </data>
-  <data name="tscmdCancellaTutto.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tscmdCancellaTutto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 28</value>
-  </data>
-  <data name="tscmdCancellaTutto.Text" xml:space="preserve">
-    <value>toolStripButton1</value>
-  </data>
   <data name="tscmdCancellaTutto.ToolTipText" xml:space="preserve">
-    <value>Cancella tutto</value>
-  </data>
-  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>6, 31</value>
+    <value>Delete all</value>
   </data>
   <data name="tscmdGeneraReport.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -763,17 +425,8 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="tscmdGeneraReport.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tscmdGeneraReport.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 28</value>
-  </data>
   <data name="tscmdGeneraReport.Text" xml:space="preserve">
-    <value>Genera report</value>
-  </data>
-  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>6, 31</value>
+    <value>Report</value>
   </data>
   <data name="tscmdInfo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -862,545 +515,65 @@
         V0xghldMYIZXTGCGV0xghldMYIZXTGCGV0xghkfWyP8ApnmLoelgYaQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="tscmdInfo.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="tscmdInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 28</value>
-  </data>
-  <data name="tscmdInfo.ToolTipText" xml:space="preserve">
+  <data name="tscmdInfo.Text" xml:space="preserve">
     <value>Info</value>
   </data>
-  <data name="cmdCostruisci.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cmdCostruisci.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 7.8pt</value>
-  </data>
-  <data name="cmdCostruisci.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 21</value>
-  </data>
-  <data name="cmdCostruisci.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 40</value>
-  </data>
-  <data name="cmdCostruisci.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
   <data name="cmdCostruisci.Text" xml:space="preserve">
-    <value>Costruisci</value>
-  </data>
-  <data name="&gt;&gt;cmdCostruisci.Name" xml:space="preserve">
-    <value>cmdCostruisci</value>
-  </data>
-  <data name="&gt;&gt;cmdCostruisci.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdCostruisci.Parent" xml:space="preserve">
-    <value>gbCostruzione</value>
-  </data>
-  <data name="&gt;&gt;cmdCostruisci.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cbCostruzione.Name" xml:space="preserve">
-    <value>cbCostruzione</value>
-  </data>
-  <data name="&gt;&gt;cbCostruzione.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbCostruzione.Parent" xml:space="preserve">
-    <value>gbCostruzione</value>
-  </data>
-  <data name="&gt;&gt;cbCostruzione.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="gbCostruzione.Location" type="System.Drawing.Point, System.Drawing">
-    <value>459, 3</value>
-  </data>
-  <data name="gbCostruzione.Size" type="System.Drawing.Size, System.Drawing">
-    <value>450, 75</value>
-  </data>
-  <data name="gbCostruzione.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="gbCostruzione.Text" xml:space="preserve">
-    <value>Costruzione</value>
-  </data>
-  <data name="&gt;&gt;gbCostruzione.Name" xml:space="preserve">
-    <value>gbCostruzione</value>
-  </data>
-  <data name="&gt;&gt;gbCostruzione.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbCostruzione.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;gbCostruzione.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="cbCostruzione.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+    <value>Construct</value>
   </data>
   <data name="cbCostruzione.Items" xml:space="preserve">
-    <value>Punto nominale</value>
+    <value>Nominal point</value>
   </data>
   <data name="cbCostruzione.Items1" xml:space="preserve">
-    <value>Punto da linea</value>
+    <value>Point from line</value>
   </data>
   <data name="cbCostruzione.Items2" xml:space="preserve">
-    <value>Punto di intersezione</value>
+    <value>Intersection point</value>
   </data>
   <data name="cbCostruzione.Items3" xml:space="preserve">
-    <value>Punto offset</value>
+    <value>Offset point</value>
   </data>
   <data name="cbCostruzione.Items4" xml:space="preserve">
-    <value>Linea per due punti</value>
+    <value>Line connecting two points</value>
   </data>
   <data name="cbCostruzione.Items5" xml:space="preserve">
-    <value>Linea ruotata per un punto</value>
+    <value>Rotated line through a point</value>
   </data>
   <data name="cbCostruzione.Items6" xml:space="preserve">
-    <value>Cerchio da centro e raggio</value>
+    <value>Circle from center and radius</value>
   </data>
   <data name="cbCostruzione.Items7" xml:space="preserve">
-    <value>Cerchio per tre punti</value>
+    <value>Circle connecting three points</value>
   </data>
   <data name="cbCostruzione.Items8" xml:space="preserve">
-    <value>Centro del cerchio</value>
+    <value>Center of circle</value>
   </data>
-  <data name="cbCostruzione.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 30</value>
-  </data>
-  <data name="cbCostruzione.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 24</value>
-  </data>
-  <data name="cbCostruzione.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;cbCostruzione.Name" xml:space="preserve">
-    <value>cbCostruzione</value>
-  </data>
-  <data name="&gt;&gt;cbCostruzione.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbCostruzione.Parent" xml:space="preserve">
-    <value>gbCostruzione</value>
-  </data>
-  <data name="&gt;&gt;cbCostruzione.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cbMisura.Name" xml:space="preserve">
-    <value>cbMisura</value>
-  </data>
-  <data name="&gt;&gt;cbMisura.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbMisura.Parent" xml:space="preserve">
-    <value>gbMisura</value>
-  </data>
-  <data name="&gt;&gt;cbMisura.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cmdMisura.Name" xml:space="preserve">
-    <value>cmdMisura</value>
-  </data>
-  <data name="&gt;&gt;cmdMisura.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdMisura.Parent" xml:space="preserve">
-    <value>gbMisura</value>
-  </data>
-  <data name="&gt;&gt;cmdMisura.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="gbMisura.Location" type="System.Drawing.Point, System.Drawing">
-    <value>915, 3</value>
-  </data>
-  <data name="gbMisura.Size" type="System.Drawing.Size, System.Drawing">
-    <value>450, 75</value>
-  </data>
-  <data name="gbMisura.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="gbMisura.Text" xml:space="preserve">
-    <value>Misura</value>
-  </data>
-  <data name="&gt;&gt;gbMisura.Name" xml:space="preserve">
-    <value>gbMisura</value>
-  </data>
-  <data name="&gt;&gt;gbMisura.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbMisura.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;gbMisura.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="cbMisura.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="gbCosruzione.Text" xml:space="preserve">
+    <value>Construction</value>
   </data>
   <data name="cbMisura.Items" xml:space="preserve">
-    <value>Distanza</value>
+    <value>Distance</value>
   </data>
   <data name="cbMisura.Items1" xml:space="preserve">
-    <value>Distanza X</value>
+    <value>X Distance</value>
   </data>
   <data name="cbMisura.Items2" xml:space="preserve">
-    <value>Distanza Y</value>
+    <value>Y Distance</value>
   </data>
   <data name="cbMisura.Items3" xml:space="preserve">
-    <value>Diametro</value>
+    <value>Diameter</value>
   </data>
   <data name="cbMisura.Items4" xml:space="preserve">
-    <value>Raggio</value>
+    <value>Radius</value>
   </data>
   <data name="cbMisura.Items5" xml:space="preserve">
-    <value>Angolo</value>
-  </data>
-  <data name="cbMisura.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 30</value>
-  </data>
-  <data name="cbMisura.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 24</value>
-  </data>
-  <data name="cbMisura.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;cbMisura.Name" xml:space="preserve">
-    <value>cbMisura</value>
-  </data>
-  <data name="&gt;&gt;cbMisura.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbMisura.Parent" xml:space="preserve">
-    <value>gbMisura</value>
-  </data>
-  <data name="&gt;&gt;cbMisura.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="cmdMisura.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="cmdMisura.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 7.8pt</value>
-  </data>
-  <data name="cmdMisura.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 21</value>
-  </data>
-  <data name="cmdMisura.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 40</value>
-  </data>
-  <data name="cmdMisura.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>Angle</value>
   </data>
   <data name="cmdMisura.Text" xml:space="preserve">
-    <value>Misura</value>
+    <value>Measure</value>
   </data>
-  <data name="&gt;&gt;cmdMisura.Name" xml:space="preserve">
-    <value>cmdMisura</value>
-  </data>
-  <data name="&gt;&gt;cmdMisura.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdMisura.Parent" xml:space="preserve">
-    <value>gbMisura</value>
-  </data>
-  <data name="&gt;&gt;cmdMisura.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panImmagine.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="panImmagine.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panImmagine.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="panImmagine.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1524, 690</value>
-  </data>
-  <data name="panImmagine.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;panImmagine.Name" xml:space="preserve">
-    <value>panImmagine</value>
-  </data>
-  <data name="&gt;&gt;panImmagine.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panImmagine.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;panImmagine.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Immagine.Name" xml:space="preserve">
-    <value>tabPage_Immagine</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Immagine.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Immagine.Parent" xml:space="preserve">
-    <value>tabcGrafico</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Immagine.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Costruzioni.Name" xml:space="preserve">
-    <value>tabPage_Costruzioni</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Costruzioni.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Costruzioni.Parent" xml:space="preserve">
-    <value>tabcGrafico</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Costruzioni.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabcGrafico.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tabcGrafico.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 123</value>
-  </data>
-  <data name="tabcGrafico.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1544, 781</value>
-  </data>
-  <data name="tabcGrafico.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;tabcGrafico.Name" xml:space="preserve">
-    <value>tabcGrafico</value>
-  </data>
-  <data name="&gt;&gt;tabcGrafico.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabcGrafico.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tabcGrafico.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
-    <value>tabPage_Immagine</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panImmagine" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel4" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0" /&gt;&lt;Rows Styles="Percent,100,Absolute,50,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="tabPage_Immagine.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 25</value>
-  </data>
-  <data name="tabPage_Immagine.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage_Immagine.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1536, 752</value>
-  </data>
-  <data name="tabPage_Immagine.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPage_Immagine.Text" xml:space="preserve">
-    <value>Immagine</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Immagine.Name" xml:space="preserve">
-    <value>tabPage_Immagine</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Immagine.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Immagine.Parent" xml:space="preserve">
-    <value>tabcGrafico</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Immagine.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Name" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="flowLayoutPanel2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanel3" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33,33112,Percent,33,33445,Percent,33,33445" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1530, 746</value>
-  </data>
-  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
-    <value>tabPage_Immagine</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panImmagine" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel4" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0" /&gt;&lt;Rows Styles="Percent,100,Absolute,50,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="tableLayoutPanel4.ColumnCount" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Name" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel3.Name" xml:space="preserve">
-    <value>flowLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel3.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 699</value>
-  </data>
-  <data name="tableLayoutPanel4.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1524, 44</value>
-  </data>
-  <data name="tableLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Name" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel4.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="flowLayoutPanel2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanel3" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33,33112,Percent,33,33445,Percent,33,33445" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="&gt;&gt;btnZoomPiuImg.Name" xml:space="preserve">
-    <value>btnZoomPiuImg</value>
-  </data>
-  <data name="&gt;&gt;btnZoomPiuImg.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnZoomPiuImg.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;btnZoomPiuImg.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnZoomMenoImg.Name" xml:space="preserve">
-    <value>btnZoomMenoImg</value>
-  </data>
-  <data name="&gt;&gt;btnZoomMenoImg.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnZoomMenoImg.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;btnZoomMenoImg.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnResetZoomImg.Name" xml:space="preserve">
-    <value>btnResetZoomImg</value>
-  </data>
-  <data name="&gt;&gt;btnResetZoomImg.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnResetZoomImg.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;btnResetZoomImg.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="flowLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>501, 38</value>
-  </data>
-  <data name="flowLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Name" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="gbMisura.Text" xml:space="preserve">
+    <value>Measurement</value>
   </data>
   <data name="btnZoomPiuImg.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1511,36 +684,6 @@
         12Mk6InXYyToiddjJOiJ12Mk6InXYyToiddjJOiJ12Mk6InXYyToiddjJOiJ12Mk6InXYwR4L/wfKO3K
         IhYjWIoAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="btnZoomPiuImg.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btnZoomPiuImg.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btnZoomPiuImg.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.8pt, style=Bold</value>
-  </data>
-  <data name="btnZoomPiuImg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="btnZoomPiuImg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 34</value>
-  </data>
-  <data name="btnZoomPiuImg.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;btnZoomPiuImg.Name" xml:space="preserve">
-    <value>btnZoomPiuImg</value>
-  </data>
-  <data name="&gt;&gt;btnZoomPiuImg.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnZoomPiuImg.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;btnZoomPiuImg.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="btnZoomMenoImg.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1706,36 +849,6 @@
         q01YAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnZoomMenoImg.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btnZoomMenoImg.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btnZoomMenoImg.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.8pt, style=Bold</value>
-  </data>
-  <data name="btnZoomMenoImg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 3</value>
-  </data>
-  <data name="btnZoomMenoImg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 34</value>
-  </data>
-  <data name="btnZoomMenoImg.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;btnZoomMenoImg.Name" xml:space="preserve">
-    <value>btnZoomMenoImg</value>
-  </data>
-  <data name="&gt;&gt;btnZoomMenoImg.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnZoomMenoImg.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;btnZoomMenoImg.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="btnResetZoomImg.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIkAAACACAYAAAA/K0oBAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
@@ -1848,186 +961,6 @@
         gRABqOMlV8MOUtSmMHr4vA1IyegOMkkySpFJklGKTJKMUmSSZJQikySjFJkkGaXIJMkoRSZJRikySTJK
         8G/4D8x/KklLF0XGAAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="btnResetZoomImg.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btnResetZoomImg.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btnResetZoomImg.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.8pt, style=Bold</value>
-  </data>
-  <data name="btnResetZoomImg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>117, 3</value>
-  </data>
-  <data name="btnResetZoomImg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 34</value>
-  </data>
-  <data name="btnResetZoomImg.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;btnResetZoomImg.Name" xml:space="preserve">
-    <value>btnResetZoomImg</value>
-  </data>
-  <data name="&gt;&gt;btnResetZoomImg.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnResetZoomImg.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;btnResetZoomImg.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lblDiametroVisualizzato.Name" xml:space="preserve">
-    <value>lblDiametroVisualizzato</value>
-  </data>
-  <data name="&gt;&gt;lblDiametroVisualizzato.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDiametroVisualizzato.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;lblDiametroVisualizzato.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;nUDDiametroCerchio.Name" xml:space="preserve">
-    <value>nUDDiametroCerchio</value>
-  </data>
-  <data name="&gt;&gt;nUDDiametroCerchio.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nUDDiametroCerchio.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;nUDDiametroCerchio.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>510, 3</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>502, 38</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblDiametroVisualizzato.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="lblDiametroVisualizzato.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblDiametroVisualizzato.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 10</value>
-  </data>
-  <data name="lblDiametroVisualizzato.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 16</value>
-  </data>
-  <data name="lblDiametroVisualizzato.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="lblDiametroVisualizzato.Text" xml:space="preserve">
-    <value>Diametro visualizzato (pixel):</value>
-  </data>
-  <data name="&gt;&gt;lblDiametroVisualizzato.Name" xml:space="preserve">
-    <value>lblDiametroVisualizzato</value>
-  </data>
-  <data name="&gt;&gt;lblDiametroVisualizzato.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDiametroVisualizzato.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;lblDiametroVisualizzato.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="nUDDiametroCerchio.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="nUDDiametroCerchio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 8</value>
-  </data>
-  <data name="nUDDiametroCerchio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 22</value>
-  </data>
-  <data name="nUDDiametroCerchio.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;nUDDiametroCerchio.Name" xml:space="preserve">
-    <value>nUDDiametroCerchio</value>
-  </data>
-  <data name="&gt;&gt;nUDDiametroCerchio.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nUDDiametroCerchio.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;nUDDiametroCerchio.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="flowLayoutPanel3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;chbRilevaPunto.Name" xml:space="preserve">
-    <value>chbRilevaPunto</value>
-  </data>
-  <data name="&gt;&gt;chbRilevaPunto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chbRilevaPunto.Parent" xml:space="preserve">
-    <value>flowLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;chbRilevaPunto.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="flowLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="flowLayoutPanel3.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
-    <value>RightToLeft</value>
-  </data>
-  <data name="flowLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1018, 3</value>
-  </data>
-  <data name="flowLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>503, 38</value>
-  </data>
-  <data name="flowLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel3.Name" xml:space="preserve">
-    <value>flowLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel3.Parent" xml:space="preserve">
-    <value>tableLayoutPanel4</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="chbRilevaPunto.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="chbRilevaPunto.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
   </data>
   <data name="chbRilevaPunto.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2340,182 +1273,8 @@
         YII=
 </value>
   </data>
-  <data name="chbRilevaPunto.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="chbRilevaPunto.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="chbRilevaPunto.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="chbRilevaPunto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>466, 3</value>
-  </data>
-  <data name="chbRilevaPunto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 34</value>
-  </data>
-  <data name="chbRilevaPunto.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;chbRilevaPunto.Name" xml:space="preserve">
-    <value>chbRilevaPunto</value>
-  </data>
-  <data name="&gt;&gt;chbRilevaPunto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chbRilevaPunto.Parent" xml:space="preserve">
-    <value>flowLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;chbRilevaPunto.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
-    <value>tabPage_Costruzioni</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panGrafico" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel3" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,Absolute,20" /&gt;&lt;Rows Styles="Percent,100,Absolute,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="tabPage_Costruzioni.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 25</value>
-  </data>
-  <data name="tabPage_Costruzioni.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage_Costruzioni.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1536, 752</value>
-  </data>
-  <data name="tabPage_Costruzioni.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPage_Costruzioni.Text" xml:space="preserve">
-    <value>Costruzioni</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Costruzioni.Name" xml:space="preserve">
-    <value>tabPage_Costruzioni</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Costruzioni.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Costruzioni.Parent" xml:space="preserve">
-    <value>tabcGrafico</value>
-  </data>
-  <data name="&gt;&gt;tabPage_Costruzioni.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1530, 746</value>
-  </data>
-  <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
-    <value>tabPage_Costruzioni</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panGrafico" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel3" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,Absolute,20" /&gt;&lt;Rows Styles="Percent,100,Absolute,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="&gt;&gt;btnZoomPiuGr.Name" xml:space="preserve">
-    <value>btnZoomPiuGr</value>
-  </data>
-  <data name="&gt;&gt;btnZoomPiuGr.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnZoomPiuGr.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;btnZoomPiuGr.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnZoomMenoGr.Name" xml:space="preserve">
-    <value>btnZoomMenoGr</value>
-  </data>
-  <data name="&gt;&gt;btnZoomMenoGr.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnZoomMenoGr.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;btnZoomMenoGr.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnResetZoomGr.Name" xml:space="preserve">
-    <value>btnResetZoomGr</value>
-  </data>
-  <data name="&gt;&gt;btnResetZoomGr.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnResetZoomGr.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;btnResetZoomGr.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 699</value>
-  </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1524, 44</value>
-  </data>
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="tabPage_Immagine.Text" xml:space="preserve">
+    <value>Image</value>
   </data>
   <data name="btnZoomPiuGr.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2626,33 +1385,6 @@
         12Mk6InXYyToiddjJOiJ12Mk6InXYyToiddjJOiJ12Mk6InXYyToiddjJOiJ12Mk6InXYwR4L/wfKO3K
         IhYjWIoAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="btnZoomPiuGr.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btnZoomPiuGr.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.8pt, style=Bold</value>
-  </data>
-  <data name="btnZoomPiuGr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 4</value>
-  </data>
-  <data name="btnZoomPiuGr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 34</value>
-  </data>
-  <data name="btnZoomPiuGr.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;btnZoomPiuGr.Name" xml:space="preserve">
-    <value>btnZoomPiuGr</value>
-  </data>
-  <data name="&gt;&gt;btnZoomPiuGr.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnZoomPiuGr.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;btnZoomPiuGr.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="btnZoomMenoGr.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2818,33 +1550,6 @@
         q01YAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnZoomMenoGr.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btnZoomMenoGr.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.8pt, style=Bold</value>
-  </data>
-  <data name="btnZoomMenoGr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 4</value>
-  </data>
-  <data name="btnZoomMenoGr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 34</value>
-  </data>
-  <data name="btnZoomMenoGr.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;btnZoomMenoGr.Name" xml:space="preserve">
-    <value>btnZoomMenoGr</value>
-  </data>
-  <data name="&gt;&gt;btnZoomMenoGr.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnZoomMenoGr.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;btnZoomMenoGr.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="btnResetZoomGr.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIkAAACACAYAAAA/K0oBAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
@@ -2958,238 +1663,16 @@
         8G/4D8x/KklLF0XGAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnResetZoomGr.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 699</value>
   </data>
-  <data name="btnResetZoomGr.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.8pt, style=Bold</value>
+  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1530, 746</value>
   </data>
-  <data name="btnResetZoomGr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, 4</value>
+  <data name="tabPage_Costruzioni.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1536, 752</value>
   </data>
-  <data name="btnResetZoomGr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 34</value>
-  </data>
-  <data name="btnResetZoomGr.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;btnResetZoomGr.Name" xml:space="preserve">
-    <value>btnResetZoomGr</value>
-  </data>
-  <data name="&gt;&gt;btnResetZoomGr.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnResetZoomGr.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;btnResetZoomGr.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 27</value>
-  </data>
-  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1900, 907</value>
-  </data>
-  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="flowLayoutPanel1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tabcGrafico" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lbElementi" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel1" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,Absolute,350,Absolute,20" /&gt;&lt;Rows Styles="Absolute,20,Absolute,100,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="flowLayoutPanel1.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="flowLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 23</value>
-  </data>
-  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1544, 94</value>
-  </data>
-  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1553, 23</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 94</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>83</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1900, 960</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Open2DMeasure</value>
-  </data>
-  <data name="&gt;&gt;tsmImpostaTolleranze.Name" xml:space="preserve">
-    <value>tsmImpostaTolleranze</value>
-  </data>
-  <data name="&gt;&gt;tsmImpostaTolleranze.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;sslblScala.Name" xml:space="preserve">
-    <value>sslblScala</value>
-  </data>
-  <data name="&gt;&gt;sslblScala.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tsLingua.Name" xml:space="preserve">
-    <value>tsLingua</value>
-  </data>
-  <data name="&gt;&gt;tsLingua.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tscmdNuovo.Name" xml:space="preserve">
-    <value>tscmdNuovo</value>
-  </data>
-  <data name="&gt;&gt;tscmdNuovo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tscmdApri.Name" xml:space="preserve">
-    <value>tscmdApri</value>
-  </data>
-  <data name="&gt;&gt;tscmdApri.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tscmdSalva.Name" xml:space="preserve">
-    <value>tscmdSalva</value>
-  </data>
-  <data name="&gt;&gt;tscmdSalva.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
-    <value>toolStripSeparator1</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tscmdAnnulla.Name" xml:space="preserve">
-    <value>tscmdAnnulla</value>
-  </data>
-  <data name="&gt;&gt;tscmdAnnulla.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tscmdCancellaTutto.Name" xml:space="preserve">
-    <value>tscmdCancellaTutto</value>
-  </data>
-  <data name="&gt;&gt;tscmdCancellaTutto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
-    <value>toolStripSeparator2</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tscmdGeneraReport.Name" xml:space="preserve">
-    <value>tscmdGeneraReport</value>
-  </data>
-  <data name="&gt;&gt;tscmdGeneraReport.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator3.Name" xml:space="preserve">
-    <value>toolStripSeparator3</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tscmdInfo.Name" xml:space="preserve">
-    <value>tscmdInfo</value>
-  </data>
-  <data name="&gt;&gt;tscmdInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmMain</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tabPage_Costruzioni.Text" xml:space="preserve">
+    <value>Construction</value>
   </data>
 </root>

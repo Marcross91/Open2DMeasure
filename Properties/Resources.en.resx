@@ -118,132 +118,132 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CancellareTutto" xml:space="preserve">
-    <value>Confermare per cancellare tutto</value>
+    <value>Confirm to delete all</value>
   </data>
   <data name="cbCostruzione" xml:space="preserve">
-    <value>Punto nominale, Punto da linea, Punto di intersezione, Punto offset, Linea per due punti, Linea ruotata per un punto, Cerchio da centro e raggio, Cerchio per tre punti, Centro del cerchio</value>
+    <value>Nominal point, Line point, Intersection point, Offset point, Two-point line, Rotated line through a point, Circle from center and radius, Three-point circle, Center of circle</value>
   </data>
   <data name="cbMisura" xml:space="preserve">
-    <value>Distanza, Distanza X, Distanza Y, Diametro, Raggio, Angolo</value>
+    <value>Distance, X-Distance, Y-Distance, Diameter, Radius, Angle</value>
   </data>
   <data name="cbModalitaScala" xml:space="preserve">
-    <value>Distanza nota, DistanzaX nota, DistanzaY nota, Automatica</value>
+    <value>Known distance, Known X-distance, Known Y-distance, Automatic</value>
   </data>
   <data name="cmdCostruisci" xml:space="preserve">
-    <value>Costruisci</value>
+    <value>Construct</value>
   </data>
   <data name="cmdDefinisciAsseX" xml:space="preserve">
-    <value>Definisci asse X</value>
+    <value>Define X axis</value>
   </data>
   <data name="cmdDefinisciOrigine" xml:space="preserve">
-    <value>Definisci origine</value>
+    <value>Define origin</value>
   </data>
   <data name="cmdDfinisciAsseY" xml:space="preserve">
-    <value>Definisci asse Y</value>
+    <value>Define Y axis</value>
   </data>
   <data name="cmdMisura" xml:space="preserve">
-    <value>Misura</value>
+    <value>Measure</value>
   </data>
   <data name="CostruzioneOff" xml:space="preserve">
-    <value>La modalità costruzione non è attiva!</value>
+    <value>Construction mode is not active!</value>
   </data>
   <data name="ElementoNonCreato" xml:space="preserve">
-    <value>L'elemento non è stato creato!</value>
+    <value>The item was not created!</value>
   </data>
   <data name="ErrModScala" xml:space="preserve">
-    <value>Modalità di calibrazione non selezionata!</value>
+    <value>Calibration mode not selected!</value>
   </data>
   <data name="ErroreSelezione" xml:space="preserve">
-    <value>L'elemento selezionato non è corretto!</value>
+    <value>The selected item is incorrect!</value>
   </data>
   <data name="FileNonTrovato" xml:space="preserve">
-    <value>File non trovato nella cartella!</value>
+    <value>File not found in folder!</value>
   </data>
   <data name="gbAllineamento" xml:space="preserve">
-    <value>Allineamento</value>
+    <value>Align</value>
   </data>
   <data name="gbCostruzione" xml:space="preserve">
-    <value>Costruzione</value>
+    <value>Construction</value>
   </data>
   <data name="gbMisura" xml:space="preserve">
-    <value>Misura</value>
+    <value>Measuring</value>
   </data>
   <data name="InserireCoordX" xml:space="preserve">
-    <value>Inserire valore X</value>
+    <value>Insert X value</value>
   </data>
   <data name="InserireCoordY" xml:space="preserve">
-    <value>Inserire valore Y</value>
+    <value>Insert Y value</value>
   </data>
   <data name="InserireNominale" xml:space="preserve">
-    <value>Inserire valore nominale</value>
+    <value>Insert nominal value</value>
   </data>
   <data name="InserirePerc" xml:space="preserve">
-    <value>Inserire valore percentuale (0-100)</value>
+    <value>Insert percentage value (0-100)</value>
   </data>
   <data name="lblDiametroVisualizzato" xml:space="preserve">
-    <value>Diametro visualizzato (pixel)</value>
+    <value>Displayed diameter (pixel)</value>
   </data>
   <data name="lblModalitaScala" xml:space="preserve">
-    <value>Metodo di calibrazione</value>
+    <value>Calibration method</value>
   </data>
   <data name="NoIntersezione" xml:space="preserve">
-    <value>Non c'è intersezione tra gli elementi selezionati</value>
+    <value>No intersection between selected elements</value>
   </data>
   <data name="MainTitle" xml:space="preserve">
-    <value>Open2DMeasure - software di misura 2D</value>
+    <value>Open2DMeasure - 2D measurement software</value>
   </data>
   <data name="OperazioneKo" xml:space="preserve">
-    <value>L'operazione ha generato un errore!</value>
+    <value>The operation generated an error!</value>
   </data>
   <data name="OperazioneOk" xml:space="preserve">
-    <value>L'operazione è andata a buon fine!</value>
+    <value>The operation was successful!</value>
   </data>
   <data name="sslblScala" xml:space="preserve">
-    <value>Scala</value>
+    <value>Scale</value>
   </data>
   <data name="tabPage_Costruzioni" xml:space="preserve">
-    <value>Costruzioni</value>
+    <value>Construction</value>
   </data>
   <data name="tabPage_Immagine" xml:space="preserve">
-    <value>Immagine</value>
+    <value>Image</value>
   </data>
   <data name="TitoloAttenzione" xml:space="preserve">
-    <value>Attenzione!</value>
+    <value>Notice!</value>
   </data>
   <data name="TitoloInserimento" xml:space="preserve">
-    <value>Inserimento</value>
+    <value>Insertion</value>
   </data>
   <data name="tscmdAnnulla" xml:space="preserve">
-    <value>Annulla</value>
+    <value>Cancel</value>
   </data>
   <data name="tscmdApri" xml:space="preserve">
-    <value>Apri</value>
+    <value>Open</value>
   </data>
   <data name="tscmdSalva" xml:space="preserve">
-    <value>Salva</value>
+    <value>Save</value>
   </data>
   <data name="tsmImpostaTolleranze" xml:space="preserve">
-    <value>Imposta tolleranze</value>
+    <value>Set tolerances</value>
   </data>
   <data name="ValoreNonValido" xml:space="preserve">
-    <value>Il valore immesso non è corretto!</value>
+    <value>Entered value is incorrect!</value>
   </data>
   <data name="InserireAngolo" xml:space="preserve">
-    <value>Inserire valore angolo</value>
+    <value>Insert angle value</value>
   </data>
   <data name="InserireRaggio" xml:space="preserve">
-    <value>Inserire valore raggio</value>
+    <value>Insert radius value</value>
   </data>
   <data name="InserireTolPiu" xml:space="preserve">
-    <value>Inserire valore tolleranza superiore</value>
+    <value>Insert Upper tolerance value</value>
   </data>
   <data name="InserireTolMeno" xml:space="preserve">
-    <value>Inserire valore tolleranza inferiore</value>
+    <value>Insert Lower tolerance value</value>
   </data>
   <data name="tscmdCancellaTutto" xml:space="preserve">
-    <value>Cancella tutto</value>
+    <value>Delete all</value>
   </data>
   <data name="tscmdGeneraReport" xml:space="preserve">
-    <value>Genera report</value>
+    <value>Create report</value>
   </data>
 </root>
