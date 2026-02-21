@@ -42,6 +42,8 @@ Logical Organization: Commands are grouped by function: Alignment, Construction,
 
 Professional Branding: Integrated logo and "Info" section containing versioning and authorship metadata.
 
+5. Multilanguage support
+
 🛠 Technical Specifications
 Language: C#
 
@@ -101,5 +103,4 @@ Current Version: [1.0.0]
 
 
 Purpose of NEXT MAJOR RELEASE:
-- Eng language application
 - Receiving image from a fixed camera (New type of calibration will be used)
